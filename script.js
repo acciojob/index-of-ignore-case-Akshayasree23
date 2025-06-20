@@ -1,5 +1,8 @@
 function indexOfIgnoreCase(s1, s2) {
   // write your code here
+	if (s2 === "") return 0; // per JS behavior, empty substring is found at index 0
+  return s1.toLowerCase().indexOf(s2.toLowerCase());
+
 }
 
 // Please do not change the code below
